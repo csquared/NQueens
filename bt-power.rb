@@ -28,18 +28,20 @@ class Perm < Power
    end
 end
 
+=begin
 class Combi < Perm
    def prune(x)
      super or @stack[-1] && @stack[-1] >= x
    end
 end
+=end
 
 class Queen < Perm
    def prune(x)
-     puts x
+#     puts x
      super and return true
      @stack.each_with_index do |y, j|
-       puts "Check Diag"
+#       puts "Check Diag"
        size+x == j+y or size-x == j-y and return true  #CHECK DIAGONALS BEFORE RETURNING
      end
      false

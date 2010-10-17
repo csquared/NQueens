@@ -1,5 +1,6 @@
-require "exhaustive.rb"
-require 'ginat.rb'
+require "exhaustive"
+require 'ginat'
+require 'backtracking'
 
 Given /^I have an exhaustive solver$/ do
   @solver = Exhaustive
@@ -7,6 +8,10 @@ end
 
 Given /^I have a Ginat solver$/ do
   @solver = Ginat
+end
+
+Given /^I have a BackTracking solver$/ do
+  @solver = BackTracking
 end
 
 When /^I solve for N equals (\d+)$/ do |n|

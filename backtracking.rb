@@ -5,9 +5,11 @@
 require "bt-power.rb"
 require "printer.rb"
 
-def solve(n)
-  Queen.new(n).each do |x|
-    return x
+module BackTracking
+  def self.solve(n)
+    Queen.new(n).each do |x|
+      return x
+    end
   end
 end
 
