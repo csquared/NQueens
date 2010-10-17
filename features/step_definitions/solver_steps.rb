@@ -1,7 +1,12 @@
 require "exhaustive.rb"
+require 'ginat.rb'
 
 Given /^I have an exhaustive solver$/ do
   @solver = Exhaustive
+end
+
+Given /^I have a Ginat solver$/ do
+  @solver = Ginat
 end
 
 When /^I solve for N equals (\d+)$/ do |n|
