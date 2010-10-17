@@ -17,7 +17,7 @@ end
 if $0 == __FILE__
   n = ARGV[0] ? ARGV[0].to_i : 4
   #print solve(n)
-  Printer.print_board(solve(n))
+  Printer.print_board(BackTracking.solve(n))
   #print Printer.p_tuple_board(solve(n))
   #Printer.p_file(solve(n))
 end

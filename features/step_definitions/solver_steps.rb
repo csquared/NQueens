@@ -44,8 +44,10 @@ Then /^there should be only 1 Queen per diagonal$/ do
 end
 
 Then /^I should visually inspect the board$/ do
-  puts "====== Solution ========"
-  puts @solution.inspect
-  puts "====== Board ==========="
-  Printer.print_board(@solution) 
+  if ENV['DEBUG_N_QUEENS']
+    puts "====== Solution ========"
+    puts @solution.inspect
+    puts "====== Board ==========="
+    Printer.print_board(@solution) 
+  end
 end
