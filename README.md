@@ -13,6 +13,7 @@ For why this matters, check out my talk on Bundler (link coming soon)
     And there should be only 1 Queen per row
     And there should be only 1 Queen per column
     And there should be only 1 Queen per diagonal
+<pre>
 ====== Solution ========
 [0, 2, 5, 7, 9, 4, 8, 1, 3, 6]
 ====== Board ===========
@@ -27,4 +28,5 @@ For why this matters, check out my talk on Bundler (link coming soon)
 7 . Q . . . . . . . .
 8 . . . Q . . . . . .
 9 . . . . . . Q . . .
+</pre>
     And I should visually inspect the board
