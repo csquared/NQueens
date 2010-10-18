@@ -22,6 +22,22 @@ end
   @board is a representation of a game board where
   a queen is a "Q" and an empty space is a period, "."
   Queens and periods are separated by spaces
+
+  Example for N  = 10
+  ====== Solution ========
+  [0, 2, 5, 7, 9, 4, 8, 1, 3, 6]
+
+  ====== Board ===========
+   Q . . . . . . . . .
+   . . Q . . . . . . .
+   . . . . . Q . . . .
+   . . . . . . . Q . .
+   . . . . . . . . . Q
+   . . . . Q . . . . .
+   . . . . . . . . Q .
+   . Q . . . . . . . .
+   . . . Q . . . . . .
+   . . . . . . Q . . .
 =end
 
 When /^I solve for N equals (\d+)$/ do |n|
