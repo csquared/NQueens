@@ -30,7 +30,6 @@ module Printer
     end
     
     (0...n).each do |i|
-      sink << i
       line =Array.new(n, " .")
       line[board[i]] = " Q"
       sink << line.to_s + "\n"
