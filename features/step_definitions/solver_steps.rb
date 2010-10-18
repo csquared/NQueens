@@ -14,6 +14,16 @@ Given /^I have a BackTracking solver$/ do
   @solver = BackTracking
 end
 
+=begin
+  @solution is an array.
+  For an element, the index represents the row.
+  The number represents the column.
+
+  @board is a representation of a game board where
+  a queen is a "Q" and an empty space is a period, "."
+  Queens and periods are separated by spaces
+=end
+
 When /^I solve for N equals (\d+)$/ do |n|
   @N = n.to_i
   @solution = @solver.solve(@N)
