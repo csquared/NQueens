@@ -2,8 +2,8 @@
 # the site is in japanese so i am unable to completely credit the author
 # his name seems to be sinara
 
-require "bt-power.rb"
-require "printer.rb"
+require "backtrack"
+require "printer"
 
 module BackTracking
   def self.solve(n)
