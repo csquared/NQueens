@@ -6,7 +6,9 @@ For why this matters, check out my talk on Bundler (link coming soon)
 
 ## Running the n-queens solver
   $ ruby exhaustive.rb N
+
   $ ruby ginat.rb N
+
   $ ruby backtracking.rb N
 
 ## Example Tests
