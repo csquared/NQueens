@@ -65,7 +65,9 @@ Then /^there should be only 1 Queen per column$/ do
 end
 
 Then /^there should be only 1 Queen per diagonal$/ do 
-  (0...@N).each{ |y| @solution.should include(y) }
+  (0...@N).each do |y| 
+    @solution.select{ |i| i == y}.size.should eql(1)
+  end
   ## not now
 end
 
