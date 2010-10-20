@@ -5,13 +5,17 @@ I'm running it through cucumber and sharing it with the world.
 For why this matters, check out my talk on Bundler (link coming soon)
 
 ## Running the n-queens solver
-  $ ruby exhaustive.rb N
+  $ bundle exec ruby exhaustive.rb N
 
-  $ ruby ginat.rb N
+  $ bundle exec ruby ginat.rb N
 
-  $ ruby backtracking.rb N
+  $ bundle exec ruby backtracking.rb N
 
-## Example Tests
+## Running the tests
+  $ bundle exec cucumber
+
+
+## Example
 
   Scenario: I solve for N=10
     Given I have an exhaustive solver
