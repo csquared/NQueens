@@ -1,4 +1,5 @@
 GEM
+  remote: http://gemcutter.org/
   specs:
     builder (2.1.2)
     columnize (0.3.1)

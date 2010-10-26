@@ -1,4 +1,6 @@
-# no source -- using system gems, yo
-gem 'cucumber'
-gem 'ruby-debug'
-gem "rspec"
+source "http://gemcutter.org"
+group :test do 
+  gem 'cucumber'
+  gem 'ruby-debug'
+  gem "rspec"
+end

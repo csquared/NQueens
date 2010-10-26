@@ -1,3 +1,4 @@
+#Bundler.require(:test)
 require "exhaustive"
 require 'ginat'
 require 'backtracking'
